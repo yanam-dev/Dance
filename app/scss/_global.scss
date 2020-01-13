@@ -7,6 +7,7 @@ body{
     height: 100%;
     position: relative;
     overflow-x: hidden; 
+    
     // scroll-behavior: smooth;
 }
 *,
@@ -24,15 +25,20 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
+    border-left: 1px dotted red;
+    border-right: 1px dotted red;
+   
 }
 main{
-    background-color: #f8f8f8;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
-    
+    background: url(../images/content/stars-bg2.svg) no-repeat center center / cover;
 }
+
 nav{
     display: block;
     font-family: 'Lato', sans-serif;
+    color: aqua;
 }
 ul,
 li{
@@ -47,12 +53,17 @@ a {
     color: #fff;
     line-height: 24px;
     font-size: 14px;
+    background-color: transparent;
 }
 a, label{
     -webkit-tap-highlight-color: transparent;
 }
 img {
     display: block;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
 }
 input[type=text], input[type=submit], textarea{
 	-webkit-appearance: none;
@@ -94,18 +105,25 @@ button:not(:disabled) {
     border: none;
 }
 h1{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'WildernessTypeface-Regular';
     font-size: 200px;
+    font-weight: 700;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    line-height: 72px;
     font-weight: 700;
 }
 h3{
     font-size: 45px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
+    text-transform: uppercase;
 }
 h5{
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
 }
 .wrapper{
@@ -118,4 +136,35 @@ h5{
 }
 .footer{
     flex: 0 0 auto; 
+}
+
+// HEADLINE ANIMATION
+%title-animation{
+path{
+	stroke:#f9f9f9;
+	fill: #194052;
+	stroke-dasharray: 2000;
+	opacity: 10;
+	animation: animate 4s cubic-bezier(0,0.23,1,.1); 
+}
+@keyframes animate{
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 2000;
+	}
+	30%{
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset: 2000;
+	}
+	80% {
+		fill: #194052;
+	}
+	100% {
+		opacity: 10;
+		fill: #194052;
+		stroke-dashoffset: 0;
+	}
+}
 }
