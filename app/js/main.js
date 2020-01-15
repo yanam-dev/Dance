@@ -7,6 +7,13 @@ $(function(){
         speed: 800,
         slidesToShow: 1
     });
+    $('.works-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/icons/chevron-left.svg" alt="Link to...">',
+        nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/icons/chevron-right.svg" alt="Link to...">',
+    });
+    
     // menu button
     const navSLide = () => {
         const menu__btn = document.querySelector('.menu__btn');
@@ -31,4 +38,15 @@ $(function(){
     }
     navSLide();
     
+    // wow animation
+    wow = new WOW(
+        {
+        boxClass:     'wow',
+        animateClass: 'animated', 
+        offset:       0,         
+        mobile:       true,      
+        live:         true   
+      }
+      )
+    wow.init();
 });

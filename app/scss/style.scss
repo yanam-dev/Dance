@@ -8,7 +8,8 @@
 .header__top{
     padding: 10px 0;
     color: #f4f4f4;
-    background-color: rgb(34, 34, 34);
+    // background-color: rgb(34, 34, 34);
+    background-color: #194052;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -62,35 +63,37 @@
     .menu__btn{
         display: block;
         cursor: pointer;
-        position: absolute;
-        // position: fixed;
-        top: -115px;
-        left: 15px;
+        // position: absolute;
+        position: fixed;
+        // top: -115px;
+        top: 70px;
+        left: 16%;
         transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1), cubic-bezier(0.645, 0.045, 0.355, 1);
         div{
             height: 2px;
             width: 28px;
             border-bottom: 1px solid #333;
             background: linear-gradient(to right, rgba(7,110,158,1) 0%, rgba(243,176,157,1) 100%);
-            border-radius: 8px;
+            border-radius: 24px;
             margin-bottom: 4px;
         }
-        &:hover{
-            transform: rotate(45deg);
+        // &:hover{
+            // transform: rotate(45deg);
             // transform: rotate(-45deg);
-            transition: all 1.5s ease;
-            &:before{
-                content: 'vai giù';
-                font-family: 'Dancing Script', cursive;
-                font-size: 24px;
-                position: absolute;
-                color: rgba(128, 0, 128, 0.9);
-                transform: rotate(45deg) translate(-4px,-8px);
-                width: 100px;
-                top: 50px;
-                left: 0;
-            }
-        }
+            // transition: all 1.5s ease-in-out;
+// VAI GIU
+        //     &:before{
+        //         content: 'vai giù -->';
+        //         font-family: 'Dancing Script', cursive;
+        //         font-size: 24px;
+        //         position: absolute;
+        //         color: rgba(128, 0, 128, 0.9);
+        //         transform: rotate(45deg) translate(-4px,-8px);
+        //         width: 100px;
+        //         top: 50px;
+        //         left: 0;
+        //     }
+        // }
     }
     &-logo{
         display: block;
@@ -174,7 +177,7 @@
     position: relative;
     &-title{
         @extend %title-animation;
-        width: 60%;
+        width: 58%;
         margin: 0 auto;
         position: absolute;
         top: 50%;
@@ -182,7 +185,171 @@
         transform: translate(-50%, -50%);
     }
 }
+// bio section start
+.bio{
+    padding: 120px 0;
+    &-flex{
+        justify-content: space-around;
+    }
+    &-heading{
+        max-width: 400px;
+        color: #333;
+        h3{
+            font-family: 'FiraSans-ExtraBold', sans-serif;
+            font-size: 45px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+            &:after{
+                content: 'click -->';
+                font-family: 'Dancing Script', cursive;
+                font-size: 28px;
+                text-transform: none;
+                position: absolute;
+                color: rgba(128, 0, 128, 0.9);
+                transform: rotate(0deg) translate(-4px,-8px);
+                width: 150px;
+                top: 60px;
+                left: 74%;
+            }
+        }
+    }
+    &-content{
+        max-width: 590px;
+        color: #333;
+        margin-top: 25px;
+        h5{
+            margin-bottom: 30px;
+            letter-spacing: 0.03em;
+            line-height: 30px;
+        }
+        p{
+            letter-spacing: 0.03em;
+            line-height: 24px;  
+        }
+    }
+    &-link {
+        margin: 50px 0;
+        a {
+            color: #222;
+            padding: 16px 32px;
+            border: 1px solid #333;
+            font-size: 12px;
+            background-color: rgb(243, 243, 242);
+            letter-spacing: 4px;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                text-decoration: none;
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+// bio section end
+// works section start
+.works-slider{
+    padding-top: 110px;
+    
+    .slick-slide:nth-child(4n + 1){
+        .surf-slider__box{
+            margin-top: 32px;
+        }
+    }
+    .slick-slide:nth-child(4n + 3){
+        .works-slider__box{
+            margin-top: 89px;
+        }
+    }
+    .slider-arrows{
+        // top: 50px;
+        opacity: 0.25;
+    }
+    &__box{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 750px;
+        background: rgba(41, 51, 51, 0.81);
+    }
+    &__overlay{
+        min-height: 750px;
+        // background: rgba(41, 51, 51, 0.81);
+        position: relative;
+        &:hover{
+            // background: rgba(#1C2121, 0.3);
+            transition: all .5s ease;
+            .surf__btn-box{
+                display: block;
+            }
+        }
+        &:nth-child(odd){
+            &:hover{
+                // background: rgba(#1C2121, 0.3);
+                background: #FFFF00;
+            }
+        }
+        &:nth-child(even){
+            &:hover{
+                // background: rgba(#1C2121, 0.3);
+                background: #FE02C2;
+            }
+        }
+    }
+    .slick-current{
+        .works__btn-box{
+            display: block;
+        }
+        .works-slider__overlay{
+            background: rgba(#1C2121, 0.3);
+        }
+    }
+    .slick-arrow{
+        padding: 12px;
+        border: 1px solid #333;
+        &:hover{
+            background-color: rgb(243, 243, 242);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+.slider__overlay{
+    &-title{
+        line-height: 36px;
+        max-width: 100px;
+        padding: 72px 0;
+        margin-left: 25px;
+        &::nth-child(2){
+            margin-left: 50px;
+        }
+    }
+    &-location{
+        line-height: 22px;
+        letter-spacing: 8px;
+        font-weight: 400;
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 15%;
+        width: 0;
+        height: 0;
+        white-space: nowrap;
+        margin-left: 40px;
+        span{
+            font-weight: 100;
+        }
+    }
+}
+.works__btn-box{
+    bottom: 0;
+    position: absolute;
+    margin-left: 40px;
+    display: none;
+}
 
-
+// works section end
+.footer{
+    height: 500px;
+    z-index: -1;
+}
 
 @import 'media';

@@ -33,7 +33,8 @@ body{
 main{
     background-color: #fff;
     font-family: 'Lato', sans-serif;
-    background: url(../images/content/stars-bg2.svg) no-repeat center center / cover;
+    background: url(../images/content/stars-bg2.svg) no-repeat top center/ cover;
+    z-index: 1;
 }
 
 nav{
@@ -168,4 +169,33 @@ path{
 		stroke-dashoffset: 0;
 	}
 }
+}
+// slider animation
+@keyframes linkAnim{
+    from{
+        background-color: $color-decor;
+    }
+    50%{
+        transform: translateX(-70%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        background-color: $color-decor;
+        opacity: 1;
+    }
+}
+@keyframes linkAnimSmall{
+    from{
+        background-color: $color-decor;
+    }
+    50%{
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        background-color: $color-decor;
+        opacity: 1;
+    }
 }
