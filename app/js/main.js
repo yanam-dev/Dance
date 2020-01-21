@@ -37,16 +37,44 @@ $(function(){
         });
     }
     navSLide();
-    
+
+    // Preloader
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.cssload-triangles');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+    });
+
+    // Smooth scrolling
+	$("nav li a").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 1000);
+    });
+
+    // Анимация
+
+    // $(window).scroll(function() {
+    //     $('.form').each(function(){
+    //         var imagePos = $(this).offset().top;
+
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (imagePos < topOfWindow+800) {
+    //             $(this).addClass("fadeInRight");
+    //         }
+    //     });
+       
+    // });
+
     // wow animation
     wow = new WOW(
         {
-        boxClass:     'wow',
-        animateClass: 'animated', 
-        offset:       0,         
-        mobile:       true,      
-        live:         true   
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
       }
       )
-    wow.init();
-});
+      wow.init();
+

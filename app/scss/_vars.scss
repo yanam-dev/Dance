@@ -1,3 +1,50 @@
-$color-decor: #fd4f57;
+$color-decor: #fd4f58;
 $star-bord: #9F8047;
 $main: #222;
+$title-slide: #f4f4f4;
+
+%heading{
+    max-width: 400px;
+    color: #333;
+    h3{
+        font-family: 'FiraSans-ExtraBold', sans-serif;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+        &:after{
+            content: 'click -->';
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            text-transform: none;
+            position: absolute;
+            color: rgba(128, 0, 128, 0.9);
+            transform: rotate(0deg) translate(-4px,-8px);
+            width: 150px;
+            top: 65px;
+            left: 74%;
+        }
+    }
+}
+%point{
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+}
+%button{
+    color: #222;
+    padding: 16px 32px;
+    border: 1px solid #333;
+    font-size: 12px;
+    background-color: rgb(243, 243, 242);
+    letter-spacing: 4px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 300;
+    &:hover {
+        text-decoration: none;
+        transform: scale(0.97);
+    }
+}
