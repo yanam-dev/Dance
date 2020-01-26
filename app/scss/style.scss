@@ -46,7 +46,6 @@
     .slick-slider{
         .slick-prev, .slick-next{
             display: none!important;
-            
         }
     }
 }
@@ -117,9 +116,9 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 color: #333;
-                font-size: 12px;
+                font-size: 14px;
                 letter-spacing: .267em;
-                line-height: 2.6em;
+                line-height: 2.9em;
                 transition: opacity .5s ease-in-out,color .5s ease-in-out;
                 margin-right: 100px;
                 &:hover {
@@ -189,6 +188,9 @@
     padding-top: 60px;
     .heading{
         @extend %heading;
+        h3:after{
+            content: 'swipe -->';
+        }
     }
 }
 .works-slider{
@@ -202,7 +204,8 @@
         .works-slider__overlay{
             &:hover{
                 transition: all .5s ease;
-                background-color: rgba(238, 0, 0, 0.39);
+                // background-color: rgba(238, 0, 0, 0.39);
+                background-color: rgba(239, 75, 17, 0.55);
                 // .works__btn-box > a > img {
                 //     position: absolute;
                 //     display: block;
@@ -212,7 +215,7 @@
             }
         }
         &:nth-child(4n + 1){
-            .surf-slider__box{
+            .works-slider__box{
                 margin-top: 32px;
             }
         }
@@ -243,15 +246,21 @@
         }
     }
     &__box{
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+    }
+    &__wrapper{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         min-height: 500px;
         z-index: 12;
-        &:focus{
-            box-shadow: none;
-            outline: none;
-        }
+        // &:focus{
+        //     box-shadow: none;
+        //     outline: none;
+        // }
     }
     &__overlay{
         min-height: 500px;
@@ -260,9 +269,11 @@
     }
     .slick-current{
         .works-slider__overlay {
+            transition: all .5s ease;
             &:hover{
                 transition: all .5s ease;
-                background-color: rgba(238, 0, 0, 0.85);
+                // background-color: rgba(238, 0, 0, 0.85);
+                background-color: rgba(239, 75, 17, 0.5);
             }
         }
         .works__btn-box{
@@ -445,30 +456,32 @@
         animation-duration: 8s;
         animation-fill-mode: both;
         animation-name: form;
-        background: #f4f4f4;
+        background: rgb(95, 182, 205);
         height: 300px;
         padding: 20px 0;
         width: 60%;
         position: absolute;
         top: 0;
         right: 0;
-        color: #f4f4f4;
+        // color: #f4f4f4;
         input, textarea{
             overflow: hidden;
             border: none;
             border-bottom: 1px solid #fff;
             font-size: 18px;
-            font-family: 'Lato', sans-serif;
-            background: #f4f4f4;
+            font-weight: 300;
+            background: rgba(95, 182, 205, 0.8);
             margin-left: 90px;
             height: 75px;
             width: 39%;
             padding: 37px 0 17px;
-            color: #333;
-            font-weight: 300;
+            color: #fff;
             &::placeholder{
-                color: #333;
+                color: #fff;
                 font-weight: 300;
+                letter-spacing: 0.05em;
+                font-family: 'Lato', sans-serif;
+                background: rgba(95, 182, 205, 0.8);
             }
         }
         textarea{
@@ -487,7 +500,7 @@
             align-items: center;
             display: block;
             &:hover{
-                background-color: rgb(243, 243, 242);
+                background-color: #f3f3f2;
             }
         }
         svg{

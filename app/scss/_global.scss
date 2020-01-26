@@ -30,8 +30,8 @@ body{
     margin: 0 auto;
     width: 100%;
     padding: 0 15px;
-    border-left: 1px dotted red;
-    border-right: 1px dotted red;
+    // border-left: 1px dotted red;
+    // border-right: 1px dotted red;
    
 }
 main{
@@ -43,7 +43,7 @@ main{
 nav{
     display: block;
     font-family: 'Lato', sans-serif;
-    color: aqua;
+    // color: aqua;
 }
 ul,
 li{
@@ -162,7 +162,8 @@ path{
 	fill: #194052;
 	stroke-dasharray: 2000;
 	opacity: 10;
-	animation: animate 4s cubic-bezier(0,0.23,1,.1); 
+	animation: animate 4s infinite cubic-bezier(0,0.23,1,.1); 
+	// animation-iteration-count: 1;
 }
 @keyframes animate{
 	0% {

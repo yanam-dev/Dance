@@ -12,8 +12,34 @@ $(function(){
         slidesToScroll: 1,
         prevArrow: '<img class="slider-arrow slider-arrow__left" src="images/icons/chevron-left.svg" alt="Link to...">',
         nextArrow: '<img class="slider-arrow slider-arrow__right" src="images/icons/chevron-right.svg" alt="Link to...">',
+        responsive: [
+            {
+              breakpoint: 1240,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+              }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+              },
+        ]
     });
-    
+    // parallax
+    var rellax = new Rellax('.rellax');
     // menu button
     const navSLide = () => {
         const menu__btn = document.querySelector('.menu__btn');
@@ -65,7 +91,6 @@ $(function(){
     //     });
        
     // });
-
     // wow animation
     wow = new WOW(
         {

@@ -1,11 +1,61 @@
 @media (max-width: 1920px){
-    .header__top-social > a {
-        right: 0;
+    .header__main .header__top-social > a {
+        right: 15%;
+        top: 20.5%;
+    }
+}
+@media (max-width: 1680px){
+    .header__main .header__top-social > a {
+        right: 10%;
+        top: 20.5%;
+    }
+}
+@media (max-width: 1600px){
+    .header__main .header__top-social > a {
+        right: 8%;
+        top: 21%;
+    }
+}
+@media (max-width: 1520px){
+    .header__main .header__top-social > a {
+        right: 5%;
+        top: 25%;
+    }
+}
+@media (max-width: 1440px){
+    .header__main .header__top-social > a {
+        right: 5%;
+        // top: 30%;
+        top: 25%;
+    }
+    .top-slider__item-info{
+        span{
+            font-weight: 400;
+            opacity: 1;
+        }
+    }
+    .slogan-title path{
+        animation-iteration-count: infinite;
+    }
+    .works-slider .slider-arrow__left {
+        left: 69%;
+    }
+    .contact .form input{
+        width: 37.5%;
     }
 }
 @media (max-width: 1400px){
     .header{
         position: relative;
+        &__main-content{
+            margin: 150px 0 70px;
+        }
+        &__main-logo{
+            .header__main-title{
+                margin-bottom: 15px;
+                line-height: 70px;
+            }
+        }
     }
     .menu__btn{
         display: block!important;
@@ -44,7 +94,7 @@
     .menu{
         &__list{
             position: absolute;
-            top: -125px;
+            top: -130px;
             bottom: auto;
             left: 0;
             padding-left: 30px;
@@ -93,25 +143,224 @@
         transform: rotate(45deg) translate(-3px, -4px);
     }
     .header__main .header__top-social a {
-        right: 6%;
-        top: 28%;
+        right: 4%;
+        top: 31%;
     }
+    .studio__wrapper-content {
+        padding-left: 0px;
+        max-width: 500px;
+        .heading{
+            padding-left: 125px;
+        }
+        .studio__links, .studio__wrapper-txt{
+            padding-left: 50px;
+        }
+    }
+    
 }
-@media (max-width: 1320px) {
+// LENOVO>OPERA 1326px * 667px
+@media (max-width: 1366px) {
     // .ov-scroll{
     //     overflow-y: auto;
 	//     -webkit-overflow-scrolling:touch;
     // }
+    .menu__list{
+        top: -130px;
+    }
+    .header__main{
+        .header__top-social{
+            a{
+                right: 5%;
+                text-align: right;
+                font-size: 13px;
+                line-height: 19px;
+                letter-spacing: 0.25em;
+                padding-right: 6px;
+            }
+            span{
+                display: none;
+            }
+        }
+    }
+    .studio__wrapper-content {
+        max-width: 480px;
+    }
+    .works .heading,
+    .studio__wrapper-content .heading {
+        padding-left: 95px;
+    }
+    .works .heading h3:after{
+        left: 68%;
+    }
+    .works-slider {
+        .slider-arrow__right {
+            left: 75%;
+        }
+        .slider-arrow__left {
+            left: 69%;
+        }
+    }
+    .studio .heading h3:after {
+        left: 46%;
+    }
+    .contact .form {
+        input{
+            width: 34.5%;
+            margin-left: 70px;
+        }
+        textarea{
+            margin-left: 70px;
+            width: 77.5%;
+        }
+        button{
+            margin-left: 70px;
+            padding: 16px 32px;
+        }
+    }
+    .contact{
+        padding-bottom: 120px;
+    }
+    .works .heading h3:after {
+        left: 68%;
+    }
+    // .slogan-title path{
+    //     animation-iteration-count: 3;
+    // }
 }
-@media (max-width: 1025px){
+// @media (max-width: 1280px){
+//     .header__main .header__top-social a {
+//         right: 4%;
+//         top: 24.5%;
+//     }
+// }
+@media (max-width: 1280px){
+    .studio__inner{
+        max-width: 500px;
+        .studio__map{
+            margin-left: 0;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 1240px){
+    .works .heading, .studio__wrapper-content .heading {
+        padding-left: 65px;
+    }
+    .works .heading h3:after {
+        left: 63%;
+    }
+    .studio .heading h3:after {
+        left: 41%;
+    }
+}
+@media (max-width: 1152px){
     .header__main .header__top-social a {
-        top: 16%;
-        width: 430px;
-        right: 5%;
+        right: 4%;
+        top: 29.5%;
+        width: 400px;
+        span {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+    .works .heading, .studio__wrapper-content .heading {
+        padding-left: 50px;
+    }
+    .works .heading h3:after {
+        left: 61%;
+    }
+    .studio .heading h3:after {
+        left: 39%;
+    }
+    .studio__inner{
+        max-width: 400px;
+    }
+    // .works .heading, .studio__wrapper-content .heading {
+    //     padding-left: 65px;
+    // }
+    // .works .heading h3:after {
+    //     left: 63%;
+    // }
+    // .studio .heading h3:after {
+    //     left: 41%;
+    // }
+}
+@media (max-width: 1024px){
+    .header__main .header__top-social a {
+        top: 11%;
+        width: 260px;
     }
     .menu__list{
         margin-top: 0;
     }
+    .header__main-logo {
+        .header__main-title{
+        font-size: 60px;
+        line-height: 60px;
+        width: 223px;
+        margin-bottom: 16px;
+    }
+        .header__main-subtitle{
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+    .header__main-content {
+        margin: 150px 0 50px;
+    }
+    .bio-flex{
+        display: inline-block;
+    }
+    .bio-content{
+        max-width: 80%;
+        margin: 80px auto 0;
+    }
+    .bio .heading h3{
+        &:after{
+            left: 56%;
+        }
+    }
+    .works-slider .slider-arrow__right {
+        left: 76%;
+    }
+    .works .heading, .studio__wrapper-content .heading {
+        padding-left: 0px;
+    }
+    .works .heading h3:after {
+        left: 55%;
+    }
+    .studio .heading h3:after {
+        left: 35%;
+    }
+}
+
+
+
+// @media (max-width: 667px){
+//     .header__main .header__top-social a {
+//         top: 29.5%;
+//         right: 5%;
+//     }
+// }
+
+// @media (max-height: 812px){
+//     .menu__list{
+//         margin-top: 25px;
+//         height: 45vh;
+//     }
+// }
+
+// IMAC (2048px * 1024px)
+@media (max-height: 1025px){
+    .header__main .header__top-social a {
+        top: 23.5%;
+        // top: 225px;
+    }
+    // .menu__list{
+    //     height: 50vh;
+    // }
 }
 @media (max-width: 990px){
     .header__main-content {
@@ -122,7 +371,7 @@
         width: 100%;
         background: #f4f4f4;
         padding-top: 60px;
-        height: 50vh;
+        height: 48vh;
         z-index: 11;
     // overflow: scroll;
         li a{
@@ -142,23 +391,186 @@
     .toggle .line3{
         transform: rotate(45deg) translate(-9px, 0px);
     }
-    .header__main .header__top-social a {
-        right: 6%;
-        top: 30%;
+    .studio__wrapper-content{
+        margin-right: 25px;
+        .studio__wrapper-txt, .studio__links{
+            padding-left: 15px;
+        }
+    }
+    .studio__inner {
+        max-width: 390px;
     }
 }
-@media (max-width: 768px){
+// IPAD MINI VERTICAL (768px * 889px)
+@media (max-width: 890px){
+    .header__main .header__top-social a {
+        width: 260px;
+    }
     .menu__list{
-        height: 32vh;
+        top: -130px;
+    }
+    .works-slider .slider-arrow__right {
+        left: 77%;
+    }
+}
+@media (max-width: 854px){
+    .menu__list{
+        height: 76vh;
     }
     .header__main .header__top-social a {
-        top: 20.5%;
-        width: 400px;
+        top: 30%;
     }
-    .header__main .header__top-social a span {
-        font-size: 12px;
-        line-height: 12px;
+    .studio {
+        // padding-bottom: 100px;
+        .studio__wrapper{
+            flex-wrap: wrap;
+            &-content{
+                max-width: 90%;
+                img{
+                    margin-top: 0;
+                }
+            }
+        }
+        .studio__inner{
+            &-title{
+                margin: 0 auto;
+                padding-left: 80px;
+                margin-bottom: 25px;
+            }
+            display: grid;
+            max-width: 737px;
+            .studio__map iframe{
+                height: 230px;
+            }
+        }
     }
+}
+@media (max-width: 800px){
+    .header__main .header__top-social a {
+        top: 25%;
+    }
+}
+// IPHONE 6S HORIZONTAL & IPAD MINI (768px * 889px)
+@media (max-width: 768px){
+    .menu__list{
+        height: 87vh;
+        top: -125px;
+        li a{
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+    }
+    .header__main .header__top-social a {
+        top: 15%;
+        span {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+    .slogan{
+        background-size: auto; 
+        &-title{
+            width: 90%;
+        }
+    }
+    .bio{
+        padding-top: 100px;
+        &-content{
+            max-width: 86%;
+            margin: 70px auto 0;
+            h5{
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+            p{
+                line-height: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+    .bio, .studio, .works {
+        .heading h3{
+            font-size: 40px;
+        }
+    }
+    .bio .heading h3:after {
+        left: 48%;
+        top: 50px;
+    }
+    .works-slider .slider-arrow__right {
+        left: 78%;
+    }
+    .works .heading h3:after {
+        left: 47%;
+    }
+    .studio .heading {
+        margin-bottom: 60px;
+        h3:after {
+            left: 31%;
+        }
+    }
+    .works, .studio {
+        padding-top: 0;
+    }
+    .works-slider {
+        padding: 100px 0px;
+    }
+    .contact {
+        padding-bottom: 80px;
+    }
+}
+// LENOVO>OPERA (1326px * 768px)
+@media (max-height: 768px){
+    .header__main .header__top-social a {
+        top: 22%;
+        width: 260px;
+    }
+}
+
+// @media (max-height: 720px){
+//     .header__main .header__top-social a {
+//         top: 30.5%;
+//         width: 430px;
+//     }
+// }
+@media (max-width: 670px){
+    .works-slider {
+        .slider-arrow__right {
+            left: 80%;
+        }
+    }
+}
+@media (max-height: 668px){
+    .header__main .header__top-social a {
+        top: 21.5%;
+    }
+    // .works .heading h3:after{
+    //     top: 55px;
+    // }
+    
+    
+}
+// @media (max-height: 640px){
+//     .header__main .header__top-social a {
+//         top: 23.5%;
+//     }
+//     .menu__list{
+//         height: 57vh;
+//     }
+// }
+
+@media (max-width: 640px){
+    .header__main .header__top-social a {
+        top: 25.5%;
+        right: 5%;
+    }
+    .menu__list{
+        height: 81vh;
+    }
+    .works-slider__overlay .slider__overlay-title{
+        font-size: 26px;
+    }
+
 }
 @media (max-width: 600px){
     .header__top-location{
@@ -166,29 +578,113 @@
             display: none;
         }
     }
+    .bio .heading h3 {
+        font-size: 32px;
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .bio .heading h3:after {
+        left: 36%;
+        font-size: 25px;
+    }
+    .works .heading h3{
+        font-size: 32px;
+        &:after {
+            left: 34%;
+            top: 50px;
+            font-size: 25px;
+        }
+    }
 }
-@media (max-width: 430px){
-    .header__main-content {
-        margin: 100px 0 70px;
-    }
-    .menu__list{
-        margin-top: 25px;
-    }
-    .header__main{
-        .header__top-social{
-            a{
-                text-align: right;
-                width: 260px;
-                font-size: 13px;
-            }
-            
-            span{
-                display: none;
+@media (max-width: 520px){
+    .studio{
+        &__links{
+            max-width: 100%;
+            ul{
+                flex-direction: column;
+                li{
+                    margin-bottom: 20px;
+                }
             }
         }
     }
 }
-
+@media (max-width: 577px){
+    .works-slider {
+        padding: 30px 0px 100px;
+    }
+    .slick-arrow{
+        display: none!important;
+    }
+    .works-slider .slick-slide{
+        &:nth-child(4n + 1){
+            .works-slider__box{
+                margin-top: 25px;
+            }
+        }
+        &:nth-child(4n + 2){
+            .works-slider__box{
+                margin-top: 25px;
+            }
+        }
+        &:nth-child(4n + 3){
+            .works-slider__box{
+                margin-top: 25px;
+            }
+        }
+        &:nth-child(4n + 4){
+            .works-slider__box{
+                margin-top: 25px;
+            }
+        }
+    }
+    // .slick-dots{
+    //     justify-content: center;
+    //     display: flex;
+    //     li button {
+    //         margin-right: 8px;
+    //     }
+    // } 
+    // .slick-dots li button {
+    //     font-size: 24px;
+    //     line-height: 0;
+    //     display: block;
+    //     width: 20px;
+    //     height: 20px;
+    //     padding: 5px;
+    //     cursor: pointer;
+    //     color: transparent;
+    //     border: 0;
+    //     outline: none;
+    //     background: transparent;
+    //     &:before{
+    //         position: absolute;
+    //         width: 13px;
+    //         height: 13px;
+    //         content: '';
+    //         text-align: center;
+    //         opacity: 1;
+    //         background-color: transparent;
+    //         border: 3px solid #076e9e9e;
+    //         border-radius: 50%;
+    //     }
+    // }
+    // .slick-dots li.slick-active button:before {
+    //     background-color: #076e9e9e;
+    //     border: none;
+    // }
+}
 @media (max-width: 490px){
     // .menu__list {
     //     left: 35%;
@@ -209,10 +705,24 @@
         }
     }
 }
+// IPHONE 6S horizontal 
 @media (max-width: 421px){
+    .works-slider {
+        padding: 20px 0px 100px;
+    }
     .header__top-location{
         a:before{
             content: '';
+        }
+    }
+    .header__main .header__top-social a {
+        top: 39%;
+    }
+    .menu__list{
+        li a {
+            margin-bottom: 12px;
+            padding: 2px;
+            padding-top: 0;
         }
     }
     .top-slider__item-info{
@@ -221,73 +731,136 @@
         }
     }
     .menu__list {
-        height: 45vh;
+        height: 88vh;
         a{
             font-size: 18px;
         }
     }
+    .bio, .studio, .works {
+        .heading h3{
+            font-size: 30px;
+            &:after{
+                top: 43px;
+                font-size: 22px;
+            }
+        }
+    }
+    .bio .heading h3:after {
+        left: 38%;
+    }
+    .works .heading h3:after {
+        left: 48%;
+    }
+    .studio .heading h3:after {
+        left: 30%;
+    }
+    .studio .studio__inner{
+        margin-top: 20px;
+        &-title{
+            font-size: 32px;
+        }
+    }
+    .studio__links ul li a {
+        font-size: 18px;
+    }
+    .studio__wrapper-txt > img{
+        width: 150px;
+        height: 150px;
+    }
+    // .header__main .header__top-social a {
+    //     top: 17.5%;
+    // }
+}
+
+
+@media (max-width: 414px){
     .header__main .header__top-social a {
-        top: 17.5%;
+        top: 19%;
     }
 }
-@media (max-width: 375px){
+// IPHONE 6S vertical (376px * 667px)
+@media (max-width: 376px){
     .header__main .header__top-social a {
-        top: 17.5%;
-        font-size: 12px;
-        line-height: 16px;
+        top: 26.5%;
     }
     .menu__list{
-        margin-top: 25px;
-        height: 55vh;
+        li a{
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+    }
+    .bio .heading h3:after {
+        left: 43%;
+        top: 43px;
+        font-size: 20px;
+    }
+    .bio{
+        &-content{
+            margin-top: 60px;
+            h5{
+                font-size: 17px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
     }
 }
-@media (max-width: 320px){
-    .menu__list{
-        height: 65vh;
-    }
-}
-@media (max-height: 1366px){
-    .menu__list{
-        margin-top: 25px;
-    }
-}
-@media (max-height: 812px){
-    .menu__list{
-        margin-top: 25px;
-        height: 45vh;
-    }
-}
-@media (max-height: 736px){
-    .header__main .header__top-social a {
-        top: 19.5%;
-    }
-    .menu__list{
-        height: 50vh;
-    }
-}
-@media (max-height: 667px){
-    .header__main .header__top-social a {
-        top: 22.5%;
-    }
-    .menu__list{
-        height: 54vh;
-    }
-}
-@media (max-height: 640px){
+@media (max-width: 360px){
     .header__main .header__top-social a {
         top: 23.5%;
     }
-    .menu__list{
-        height: 57vh;
-    }
 }
-@media (max-height: 568px){
+@media (max-width: 340px){
     .header__main .header__top-social a {
-        top: 27%;
-        width: 250px;
+        top: 22.5%;
+        font-size: 10px;
+        width: 210px;
     }
-    .menu__list{
-        height: 62vh;
+    .bio {
+        padding-top: 70px;
+       .heading h3{
+        font-size: 24px;
+            &:after {
+                left: 37%;
+                top: 41px;
+                font-size: 18px;
+            }
+        } 
+        &-content{
+            margin-top: 50px;
+            h5{
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 13px;
+                line-height: 17px;
+            }
+        }
     }
-    
+    .bio-link {
+        margin: 30px 0 0;
+        a{
+            font-size: 10px;
+            padding: 12px 20px;
+        }
+    }
+    .works .heading h3,
+    .studio .heading h3{
+        font-size: 24px;
+        &:after {
+            left: 45%;
+            top: 41px;
+            font-size: 18px;
+        }
+    }
+    .studio .heading h3:after{
+        left: 25%;
+        top: 35px;
+    }
 }
